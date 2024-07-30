@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "docs",
+};
 
 export default function Docs({ params }: { params: { slug: string[] } }) {
   if (params.slug?.length === 2) {
