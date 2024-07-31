@@ -20,7 +20,7 @@ export default function RootLayout({
           this is the header
         </header>
         {children}
-        <footer c style={{ background: "gray", padding: "1rem" }}>
+        <footer  style={{ background: "gray", padding: "1rem" }}>
           this is the footer
         </footer>
       </body>
