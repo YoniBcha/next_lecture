@@ -1,8 +1,11 @@
 "use client";
+
 import Link from "next/link";
 //this import is for to style active link
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import "./style.css";
+import { Input } from "postcss";
 
 export default function AuthLayout({
   children,
@@ -15,9 +18,17 @@ export default function AuthLayout({
     { name: "forgotpassword", href: "/forgotpassword" },
   ];
   const pathname = usePathname();
+  const [input, setInput] = useState("");
 
   return (
     <div>
+      <div className="">  
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+      </div>
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
