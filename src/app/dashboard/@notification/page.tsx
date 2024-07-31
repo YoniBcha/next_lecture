@@ -1,3 +1,5 @@
+import Card from "@/components/card";
+
 export default function NotificationPage() {
-  return <h1>Notification page </h1>;
+  return <Card>Notification page </Card>;
 }

@@ -7,10 +7,10 @@ export default function ProductDetailLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const random = getRandomInt(201);
-  if (random === 200) {
-    throw new Error("Error From the product page");
-  }
+  // const random = getRandomInt(201);
+  // if (random === 200) {
+  //   throw new Error("Error From the product page");
+  // }
   return (
     <>
       {children}

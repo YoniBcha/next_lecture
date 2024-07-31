@@ -4,8 +4,6 @@ import Link from "next/link";
 //this import is for to style active link
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import "./style.css";
-import { Input } from "postcss";
 
 export default function AuthLayout({
   children,

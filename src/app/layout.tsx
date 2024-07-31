@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: {
     absolute: "",
@@ -14,12 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-['']">
         <header style={{ background: "lightblue", padding: "1rem" }}>
           this is the header
         </header>
         {children}
-        <footer style={{ background: "ghostwhite", padding: "1rem" }}>
+        <footer c style={{ background: "gray", padding: "1rem" }}>
           this is the footer
         </footer>
       </body>

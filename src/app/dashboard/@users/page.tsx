@@ -1,3 +1,5 @@
+import Card from "@/components/card";
+
 export default function UserAnalytics() {
-  return <h1>Users Page</h1>;
+  return <Card>Users Page</Card>;
 }

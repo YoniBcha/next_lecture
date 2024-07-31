@@ -1,4 +1,3 @@
-import "./style.css";
 
 export default function Dashboard({
   children,
@@ -14,12 +13,12 @@ export default function Dashboard({
   return (
     <>
       <div className="">{children}</div>
-      <div className="flex h-screen">
-        <div className="flex flex-col h-full">
+      <div className="flex">
+        <div className="flex flex-col">
           <div className="">{users}</div>
           <div className=""> {revenue}</div>
         </div>
-        <div className="">{notification}</div>
+        <div className="flex">{notification}</div>
       </div>
     </>
   );

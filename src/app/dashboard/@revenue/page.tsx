@@ -1,3 +1,5 @@
+import Card from "@/components/card";
+
 export default function RevenueMetrics() {
-  return <h1>Revenue Page</h1>;
+  return <Card>Revenue Page</Card>;
 }
