@@ -34,3 +34,4 @@ export async function DELETE(
   comments.splice(index, 1);
   return Response.json(deletedComments);
 }
+ 
